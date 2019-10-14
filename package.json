@@ -1,0 +1,26 @@
+{
+  "name": "tutorial",
+  "version": "1.0.0",
+  "description": "webpack tutorial",
+  "main": "index.js",
+  "scripts": {
+    "webpack-dev-server": "webpack-dev-server",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "debug": "npm run webpack -- --inspect --debug-brk",
+    "webpack": "webpack",
+    "dev": "npm run webpack-dev-server -- --env.mode development --watch",
+    "prod": "npm run webpack -- --env.mode production",
+    "dev:debug": "npm run debug -- --env.mode development",
+    "prod:debug": "npm run debug -- --env.mode production"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "css-loader": "^3.2.0",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.41.1",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.2"
+  }
+}
